@@ -1,11 +1,98 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DOM</title>
+     <!-- Document Object Model  -- Dom js -->
 </head>
 <body>
-    
+    <!-- <h1 id="i">indore</h1>
+    <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora rerum, officiis suscipit voluptate recusandae
+         minus autem sed earum nesciunt
+          voluptatibus laborum fugiat deleniti perspiciatis! Quisquam qui sed ex saepe quo.</p>
+     -->
+
+     <!-- <h1>Count Application</h1>
+     <button onclick="plus()">incre</button>
+     <span id="incre">0</span>
+     <br>
+     <br>
+
+     <button onclick="minus()">dec</button>
+     <span id="dec">100</span> -->
+
+
+     <div class="container">
+        <button onclick="increment()">+</button>
+        <span id="count">0</span>
+        <button onclick="decrement()">-</button>
+        
+     </div>
 </body>
 </html>
+<script>
+ 
+//  let heading = document.getElementById('i')
+//     console.log(heading.innerText)
+//      heading.innerText = 'bhopal'
+//      heading.style.background ='blue'
+//      heading.style.color = 'white'
+
+// let paragraph = document.getElementById('para')
+// console.log(paragraph.innerText)
+// paragraph.innerText ='The Bhopal disaster or Bhopal gas tragedy was a chemical accident on the night of 2–3 December 1984 at the Union Carbide India Limited (UCIL) pesticide plant in Bhopal, Madhya Pradesh, India. In what is considered the worlds '
+
+ 
+ 
+// let incValue =0
+
+//  function plus(){
+//     incValue++
+//     let spanValue = document.getElementById('incre')
+//     console.log(spanValue.innerText)
+//     spanValue.innerText = incValue
+//  }
+  
+//  let decValue = 100
+//  function minus(){
+//     decValue--
+//     let spanValue1 = document.getElementById('dec')
+//     console.log(spanValue1.innerText)
+//     spanValue1.innerText = decValue
+//  }
+// 
+
+
+var count =0
+function increment(){
+    count++
+    let spanValue = document.getElementById('count')
+    // console.log(spanValue.innerText)
+    spanValue.innerText = count
+}
+   var count = 0
+function decrement(){
+    count--
+    let spanValue1 = document.getElementById('count')
+    // console.log(spanValue1.innerText)
+    spanValue1.innerText = count
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
