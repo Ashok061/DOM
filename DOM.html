@@ -23,12 +23,21 @@
      <span id="dec">100</span> -->
 
 
-     <div class="container">
+
+     <!-- // Small Project on the DOM -->
+     <!-- <div class="container">
         <button onclick="increment()">+</button>
         <span id="count">0</span>
         <button onclick="decrement()">-</button>
         
-     </div>
+     </div> -->
+
+
+     <!-- // Create Element using Dom  -->
+      <!-- <div id="box">
+
+      </div> -->
+
 </body>
 </html>
 <script>
@@ -62,37 +71,69 @@
 //     spanValue1.innerText = decValue
 //  }
 // 
+ 
+<!-- // Small Project on the DOM -->
+
+// var count =0
+// function increment(){
+//     count++
+//     let spanValue = document.getElementById('count')
+//      console.log(spanValue.innerText)
+//     spanValue.innerText = count
+// }
+//    var count = 0
+// function decrement(){
+//     count--
+//     let spanValue1 = document.getElementById('count')
+//     console.log(spanValue1.innerText)
+//     spanValue1.innerText = count
+
+// }
+
+// const container = document.getElementById('box')
+// const container = document.createElement('div')
+//  container.style.width = '400px'
+//  container.style.height ='400px'
+//  container.style.border = '2px solid black'
+
+//  const heading = document.createElement('h2')
+//  heading.innerText ='Indore'
+// //  console.log(heading)
+//  container.appendChild(heading)
+
+//  const paragraphs = document.createElement('p')
+//  paragraphs.innerText='Indore) is the largest and most populous city in the Indian state of Madhya Pradesh. It is consistently ranked as the cleanest city in India. It serves as the headquarters of both the Indore District and the Indore Division'
+// // console.log(paragraphs)
+// container.appendChild(paragraphs)
+
+// console.log(container)
+// document.body.append(container) 
 
 
-var count =0
-function increment(){
-    count++
-    let spanValue = document.getElementById('count')
-    // console.log(spanValue.innerText)
-    spanValue.innerText = count
-}
-   var count = 0
-function decrement(){
-    count--
-    let spanValue1 = document.getElementById('count')
-    // console.log(spanValue1.innerText)
-    spanValue1.innerText = count
+// form create using only js
 
-}
+const container = document.createElement('div')
+  container.style.width = '400px'
+  container.style.height = '400px'
+  container.style.border = '2px solid black'
 
+  const forms = document.createElement('form')
+  forms.style.width= '200px'
+  forms.style.height ='200px'
+  forms.style.border = '2px solid blue'
+  
+  const labels = document.createElement('label')
+   labels.textContent ='mail'   
 
-
-
+  const inputs = document.createElement('input')
+  
 
 
+//    forms.append(labels)
+//    forms.append(inputs)
+  container.append(forms)
 
-
-
-
-
-
-
-
+  document.body.append(container)
 
 
 </script>
