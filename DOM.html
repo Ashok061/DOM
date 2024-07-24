@@ -113,24 +113,34 @@
 // form create using only js
 
 const container = document.createElement('div')
-  container.style.width = '400px'
+  // container.style.width = '400px'
   container.style.height = '400px'
   container.style.border = '2px solid black'
 
   const forms = document.createElement('form')
-  forms.style.width= '200px'
-  forms.style.height ='200px'
+  forms.style.width= '200px' 
+  forms.style.height ='300px'
   forms.style.border = '2px solid blue'
   
-  const labels = document.createElement('label')
-   labels.textContent ='mail'   
-
+  const labels= document.createElement('label')
+   labels.innerText='FirstName' 
+ 
   const inputs = document.createElement('input')
+    inputs.type ='text'
+
+    const labels1= document.createElement('label')
+    labels1.innerText ='LastName' 
+
+     const inputs1 = document.createElement('input')
+    inputs1.type ='text'
+    
+
+
   
 
+  forms.append(labels,inputs,labels1,inputs1)
+  
 
-//    forms.append(labels)
-//    forms.append(inputs)
   container.append(forms)
 
   document.body.append(container)
