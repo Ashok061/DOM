@@ -39,6 +39,7 @@
       </div> -->
 
       <!-- get element by class name  -->
+
        <li class ="listItem">C</li>
        
        <li class ="listItem">C++</li>
@@ -156,13 +157,21 @@
 
 
   // get element by class name --
-  const LIST = document.getElementsByClassName('listItem')
-    console.log(LIST[2])
-    LIST[2].innerText ='PHP'
+  // const LIST = document.getElementsByClassName('listItem')
+    // console.log(LIST[2])
+    // LIST[2].innerText ='PHP'
     
-    for(let i =0;i<LIST.length;i++){
-      LIST[i].style.color = 'red'
-    }
+    // for(let i =0;i<LIST.length;i++){
+    //   LIST[i].style.color = 'red'
+    // }
+
+    // QuerySelector and QuerySelectorAll --
+
+    const Lists = document.querySelector('.listItem')
+    console.log(Lists)
+
+    const List = document.querySelectorAll('.listItem')
+    console.log(List)
 
 
 
