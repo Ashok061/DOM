@@ -38,6 +38,15 @@
 
       </div> -->
 
+      <!-- get element by class name  -->
+       <li class ="listItem">C</li>
+       
+       <li class ="listItem">C++</li>
+       
+       <li class ="listItem">java</li>
+       
+       <li class ="listItem">js</li>
+
 </body>
 </html>
 <script>
@@ -112,38 +121,49 @@
 
 // form create using only js
 
-const container = document.createElement('div')
-  // container.style.width = '400px'
-  container.style.height = '400px'
-  container.style.border = '2px solid black'
+// const container = document.createElement('div')
+//   // container.style.width = '400px'
+//   container.style.height = '400px'
+//   container.style.border = '2px solid black'
 
-  const forms = document.createElement('form')
-  forms.style.width= '200px' 
-  forms.style.height ='300px'
-  forms.style.border = '2px solid blue'
+  // const forms = document.createElement('form')
+  // forms.style.width= '200px' 
+  // forms.style.height ='300px'
+  // forms.style.border = '2px solid blue'
   
-  const labels= document.createElement('label')
-   labels.innerText='FirstName' 
+  // const labels= document.createElement('label')
+  //  labels.innerText='FirstName' 
  
-  const inputs = document.createElement('input')
-    inputs.type ='text'
+  // const inputs = document.createElement('input')
+  //   inputs.type ='text'
 
-    const labels1= document.createElement('label')
-    labels1.innerText ='LastName' 
+  //   const labels1= document.createElement('label')
+  //   labels1.innerText ='LastName' 
 
-     const inputs1 = document.createElement('input')
-    inputs1.type ='text'
+  //    const inputs1 = document.createElement('input')
+  //   inputs1.type ='text'
     
 
 
   
 
-  forms.append(labels,inputs,labels1,inputs1)
+  // forms.append(labels,inputs,labels1,inputs1)
   
 
-  container.append(forms)
+  // container.append(forms)
 
-  document.body.append(container)
+  // document.body.append(container)
+
+
+  // get element by class name --
+  const LIST = document.getElementsByClassName('listItem')
+    console.log(LIST[2])
+    LIST[2].innerText ='PHP'
+    
+    for(let i =0;i<LIST.length;i++){
+      LIST[i].style.color = 'red'
+    }
+
 
 
 </script>
